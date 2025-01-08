@@ -43,7 +43,7 @@ def generate_sentence():
     
     prob *= next_word_count[generated_sentence[-1]]["<|end|>"]
     generated_sentence.append("<|end|>")
-    print("Probability of the generated sentence: ", math.log10(prob))
+    # print("Probability of the generated sentence: ", math.log10(prob))
     
     return " ".join(generated_sentence)
 # generate 5 sentences
